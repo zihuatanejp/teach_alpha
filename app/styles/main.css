@@ -1,0 +1,262 @@
+
+.top_fixed{  
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  height: 25px;
+  z-index: 20;
+}
+
+.padding_no{
+  padding: 0px; 
+}
+.padding_left1{
+  padding-left: 5px;
+}
+.padding_left2{
+  padding-left: 8px;
+}
+.top_title{
+  display: inline;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  font-weight:500;
+}
+
+.send_attr_txt{
+  font-family: 微软雅黑;
+  font-size: 11px;
+  font-weight: 300;
+}
+.money_txt{
+  font-family: 黑体;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.color_white1{
+      color: #FFFFFF;
+}
+.color_white2{
+  background-color: #FFFFFF;
+}
+.color_black1{
+  color: #333300 ;
+}
+.p_bottom1{
+    margin-bottom: 2px;
+}
+.color_black2{
+  color:  #333333; 
+}
+
+.color_black3{
+  color: #000000; 
+}
+
+.color_grey1{
+  color: #666666 ;
+}
+
+.img_person_lg{
+  -moz-border-radius:60px;
+  -webkit-border-radius:60px;
+  border-radius: 60px;
+  width: 45px;
+  height: 45px;
+}
+
+.bottom_bar{
+  position: fixed;
+  min-height: 43px;
+  bottom: 0px;
+  background-color: #FF9800;
+  text-align: center;
+}
+
+.head_img{
+  position: absolute; 
+  width: 100%;height:100%;  top: 0px;  left: 0px;  bottom: 0px;  right: 0px;
+  background-image: url(../images/tao_5.jpg);
+  background-size: cover;
+       opacity:0.8;
+  -moz-opacity:0.8;
+  filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+          filter:blur(3px);          
+  -webkit-filter: blur(3px); /* Chrome, Opera */
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  z-index: 5;
+}
+
+.head_img_ratio1{
+position: relative;
+width: 100%;
+padding-top: 60%;
+}
+
+.sell_pic_ratio2{
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
+}
+
+.goto_bottom{
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  opacity: 1;
+  -moz-opacity:1;
+  filter:alpha(opacity=100);
+}
+
+
+.img_person_sm{
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.color_yellow1{
+  color: #FF9800;
+}
+.color_yellow2{
+  background-color: #FF9800;
+}
+.vertical_middle{
+  vertical-align:bottom;
+}
+
+.img_tags_container{
+  height: 150px;
+  padding-top: 0px;
+  text-align: left;
+  left: 0px;
+  width: 100%;
+}
+.user_profile_row_right{
+  padding-top: 22%;
+}
+.tags{
+  font-family: 微软雅黑;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+.font_10{
+  font-family: 微软雅黑;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.yellow_button{  
+  border-radius: 0px;
+  -webkit-border-radius: 0px; 
+  -moz-border-radius: 0px; 
+  border-color: #FF9800;
+  width: 105px;
+}
+.yellow_button2{
+  border-radius: 0px;
+  -webkit-border-radius: 0px; 
+  -moz-border-radius: 0px; 
+  border-color: #FF9800;
+  background-color: #FF9800;
+}
+.yellow_button2:hover{
+  background-color: rgba(204,51,0,0.5);
+  border-color: rgba(204,153,51,0.8);
+}
+.footer_button{
+  border-color: #FFffff;
+  background-color: #FF9800;
+  margin-top: 5px;
+  margin-right: 3px;
+  padding: 5px 6px;
+}
+.row_top_space{
+  background-color:#CCCCCC;
+  padding-top:10px;
+}
+
+.font_13{
+  font-family: 微软雅黑;
+  font-size: 14px;
+  font-weight:500;
+}
+
+.the_nav_size1{
+    width: 25%;
+    border: 2px solid #999999;
+    margin: 0px !important;
+    text-align: center;
+}
+.the_pill_a{
+  border-radius: 0px !important;
+  -webkit-border-radius:0px !important;
+  -moz-border-radius:0px !important;
+
+}
+.nav li.active a,.nav li.active a:hover,.nav li.active a:focus{
+  background-color: #FF9800 !important;
+}
+.item{
+  height: 180px;
+}
+.item_pic{
+  padding: 2px 2px 0px;
+  margin-bottom: 8px;
+}
+.masonry_con{
+  margin: 0 auto;
+}
+
+.top_img{
+  height: 180px;
+  width: 100%;
+}
+.user_profile_share_look_itemimg{
+  width: 146px;
+  height: 100px;
+}
+.user_profile_share_sell_itemimg{
+  width: 100%;
+  min-height: 111px;
+  height:100%;
+}
+.align_center{
+  text-align: center;
+}
+.img_tag_margin{
+  margin-bottom: 20px;
+}
+.font_15,.font_15_bold{
+  font-family: 微软雅黑;
+  font-size: 15px;
+}
+.font_15{
+    font-weight: 300;
+}
+.font_15_bold{
+    font-weight: 700;
+}
+
+.footer_button.btn:hover{
+  background-color: rgba(204,204,153,0.5);
+  border-color: rgba(204,153,51,0.8);
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 1200px ) and (min-width: 768px){
+.user_profile_row_right{
+  padding-top: 16%;
+}
+
+
+}
