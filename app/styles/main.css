@@ -1,3 +1,25 @@
+.below_2{
+  margin-bottom: 2px;
+}
+.below_5{
+  margin-bottom: 5px;
+}
+.below_10{
+  margin-bottom: 10px;
+}
+.below_15{
+  margin-bottom: 15px;
+}
+
+.login_head{
+  height: 34px;
+}
+.login_head_item{
+  width: 120px;
+  height: 34px;
+  display: inline-block;
+}
+
 
 .top_fixed{  
   position: fixed;
