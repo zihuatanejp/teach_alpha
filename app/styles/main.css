@@ -21,6 +21,17 @@
 }
 
 
+.word_nowrap{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.teach_bg_1{
+ /* width: 100%;*/
+  
+}
+
 .top_fixed{  
   position: fixed;
   top: 0px;

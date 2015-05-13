@@ -25,13 +25,6 @@
 
 
     <div class="container-fluid" style="background-color:#CCCCCC;overflow:hidden;">
-
-      <div class="row">
-          <div class="col-xs-12 col-lg-10 col-lg-offset-1 padding_no">
-            <img src="images/teach_bg_1.jpg" class="teach_bg_1" width="100%">
-          </div>
-      </div>
-
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-4 align_center padding_no" style="border:1px solid red;">
               <div>
@@ -40,17 +33,27 @@
                 <p>互联网时代的中华传统家教演绎</p>
               </div>
               <form method="post">
-                
-                <input type="number" class="form-control align_center below_5 word_nowrap" value="" placeholder="&nbsp;&nbsp;&nbsp;手机号码" autofocus="autofocus">
-                <input type="password" class="form-control align_center word_nowrap below_15" value="" placeholder="登录密码">
+                <div class="form-inline below_5 login_head">  <!-- form inline -->
+                    <div class="form-group below_5 login_head_item" >
+                        <div class="input-group ">
+                            <div class="input-group-addon">姓</div>
+                            <input type="text" class="form-control word_nowrap" value="" placeholder="" autofocus="autofocus">
+                        </div>
+                    </div>
+                    <div class="form-group below_5 login_head_item" >
+                        <div class="input-group">
+                            <div class="input-group-addon">名</div>
+                            <input type="text" class="form-control word_nowrap" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>            <!-- form in line is end -->
 
-                <button class="btn btn-default below_15" type="submit"><span>立即登录</span></button>
-                <div>
-                    <div style="display:inline-block;float:left;"><p>忘记密码</p></div>
-                    <div class="checkbox" style="display:inline-block;float:right;">
-                         <input type="checkbox" checked>记住我
-                    </div>  
-                </div>       
+                
+                <input type="number" class="form-control align_center below_10 word_nowrap" value="" placeholder="请输入手机号码">
+                <button class="btn btn-default below_15" type="submit"><span>确认注册</span></button>
+                <div class="checkbox">
+                  <input type="checkbox" checked>我已阅读并同意用户服务协议.
+                </div>                
               </form> 
         </div>
       </div>
