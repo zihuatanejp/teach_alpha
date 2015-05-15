@@ -1,3 +1,9 @@
+.top_no{
+  margin-top: 0px;
+}
+.below_no{
+  margin-bottom: 0px;
+}
 .below_2{
   margin-bottom: 2px;
 }
@@ -10,7 +16,6 @@
 .below_15{
   margin-bottom: 15px;
 }
-
 .login_head{
   height: 34px;
 }
@@ -20,6 +25,24 @@
   display: inline-block;
 }
 
+.circle_btn1{
+  background-color: rgba(255,0,0,0.7); 
+  padding: 15px 36px;
+       border-radius: 36px;
+  -moz-border-radius:36px;
+  -webkit-border-radius:36px;
+  border: none;
+}
+.circle_btn1:visited{
+  background-color: rgba(255,0,0,0.7);
+  border: none;
+}
+.circle_btn1:hover,.circle_btn1:active,.circle_btn1:focus{
+  background-color: rgba(255,0,0,0.9);
+  border: none;
+  position: relative;
+  top: 2px;
+}
 
 .word_nowrap{
   white-space: nowrap;
@@ -30,6 +53,75 @@
 .teach_bg_1{
  /* width: 100%;*/
   
+}
+
+.font_s11,.font_s11_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 11px;
+}
+
+.font_s12,.font_s12_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+}
+
+.font_s13,.font_s13_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+}
+
+.font_s16,.font_s16_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+}
+
+.font_s18,.font_s18_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+}
+.font_s22,.font_s22_bold{
+  font-family: "Microsoft YaHei";
+  font-size: 22px;
+}
+
+.font_s11_bold,.font_s12_bold,.font_s13_bold,
+.font_s16_bold,.font_s18_bold,.font_s22_bold{
+    font-weight: 800;
+}
+
+/*注意下面这段不可以用,合在一起,因为不同浏览器会忽略其它特定浏览器的规则,使样式失效
+设置placeholder的样式*/
+.holder_txt1::-webkit-input-placeholder {
+  font-family: "Microsoft YaHei";
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(153,153,153);
+    letter-spacing: 1px;
+}
+ .holder_txt1:-moz-placeholder{
+    font-family: "Microsoft YaHei";
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(153,153,153);
+    letter-spacing: 1px;
+ }
+/*火狐上会出现number类型应用此样式不一致的问题 所以注释掉此项*/
+.holder_txt1::-moz-placeholder{
+    /*font-family: "Microsoft YaHei";
+    font-weight: 200;*/
+}
+.holder_txt1:-ms-input-placeholder{
+    font-family: "Microsoft YaHei";
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(153,153,153);
+    letter-spacing: 1px;
+}
+/*placehoder 占位符样式设置 end*/
+
+.bor_1{
+  border: solid 3px rgb(136,136,136);
+  height:50px;
 }
 
 .top_fixed{  
