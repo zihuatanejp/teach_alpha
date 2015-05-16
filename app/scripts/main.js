@@ -70,6 +70,79 @@ else if(ua.match(/Firefox/i) !=null){
 	testApp(openurl);
 }
 
+
+
+
+
+
+
+// 登录 模态框部分 js
+$(function(){
+    $('#login_frame').modal({
+      backdrop:'static',
+      keyboard:false
+    });
+
+    // $('#login_frame').on('shown.bs.modal', function () {
+    //   $('#phone_num').focus();alert('focus');
+    // });
+//$('#phone_num').focus();
+
+});
+
+
+
+
+
+
+$(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+  //$('#phone_num').tooltip('hide');
+});
+
+
+function check_null(){      
+      var phone_num=$('#phone_num').val();
+      var pass_word=$('#pass_word').val();
+
+      if(phone_num == null||phone_num == ''||phone_num == undefined||phone_num==0){
+          //alert('手机号码不能为空');
+          
+          $('#phone_num').tooltip('show');
+          return false;
+      }
+      if(pass_word == null||pass_word == ''||pass_word == undefined){
+        alert('密码不能为空');
+        return false;
+      }
+      return true;      
+}
+
+
+
+function check_phone_num(){
+      var phone_num=$('#phone_num').val();
+      var filter=/^1\d{10}$/;
+      if(filter.test(phone_num)){ 
+          $('#phone_num').tooltip('hide');         
+          return false;
+      }
+      else{
+        // alert('手机号码格式不正确');
+       $('#phone_num').tooltip('show');
+        return false;
+      }
+      
+}
+
+function check_pass_word(){
+      var pass_word=$('#pass_word').val();
+      // alert(pass_word);
+      return false;
+}
+
+
+
 //user_profile 标签页部分 cancel 使用data-toggle来启动
 
 

@@ -33,18 +33,26 @@
           </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-4 align_center padding_no" style="">
+<div class="modal " id="login_frame" role="dialog" aria-labelledby="耳染教育" aria-hidden="true">   <!-- modal frame -->
+    <div class="modal-dialog">
+        <div class="modal-content">   <!--  modal-content -->
+        <div class="modal-body">     <!--  modal - body --> 
+        <div class="container-fluid">     <!--  modal container-fluid -->
+
+      <div class="row">   <!--  row one -->
+        <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3 align_center padding_no" style="">
               <div>
-                <img src="images/logo_2.png">
+                <img src="images/logo_2.png" class="">
                 <p class="font_s11 color_coach4">互联网时代的中华传统家教演绎</p>
               </div>
-              <form method="post">
+              <form method="post" onsubmit="return check_null()">
                 
-                <input type="number" class="form-control align_center below_5 word_nowrap holder_txt1 bor_1" value="" placeholder="手机号码" autofocus="autofocus">
-                <input type="password" class="form-control align_center word_nowrap below_15 holder_txt1 bor_1" value="" placeholder="登录密码">
+                <input type="number" id="phone_num" class="form-control align_center below_5 word_nowrap holder_txt1 bor_1" value="" placeholder="手机号码" autofocus="autofocus" onblur="return check_phone_num()" data-toggle="tooltip" data-placement="top" title="手机号码格式不正确" data-trigger="manual">
 
-                <button class="btn btn-default below_15 circle_btn1" type="submit"><span class="font_s16_bold color_coach3">立即登录</span></button>
+                <input type="password" id="pass_word" class="form-control align_center word_nowrap below_15 holder_txt1 bor_1" value="" onblur="return check_pass_word()" placeholder="登录密码" 
+                data-toggle="tooltip" data-placement="top" title="密码错误" data-trigger="manual">
+
+                <button class="btn btn-default below_15 circle_btn1" type="submit" ><span class="font_s16_bold color_coach3">立即登录</span></button>
                 <div>
                     <div style="display:inline-block;float:left;"><p class="below_no font_s12 color_coach5" style="text-decoration:underline">忘记密码</p></div>
                     <div class="top_no font_s12 color_coach5" style="display:inline-block;float:right;margin-bottom:0px;">
@@ -53,7 +61,14 @@
                 </div>       
               </form> 
         </div>
-        </div>
+        </div>      <!-- row one is end -->
+
+</div>    <!--   modal continer fluid is end -->
+</div>    <!-- modal body is end -->
+</div>    <!-- modal content is end -->
+</div>  <!--  modal dialog is end -->
+</div>   <!-- modal frame is end -->
+
     </div>   <!-- container is end -->
 
 
@@ -94,5 +109,10 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+        <script type="text/javascript">
+            $(function(){
+
+            })
+        </script>
 </body>
 </html>
