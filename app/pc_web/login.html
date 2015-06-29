@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <meta name="description" content="teach_alpha">
+    <meta name="author" content="dominic">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browsehappy">当您看到这条信息,说明您正在使用 <strong>有些年头</strong>了的浏览器. 请 <a href="http://browsehappy.com/">升级您的浏览器</a> 这样有助于提升您的用户体验.</p>
+    <![endif]-->
+
+
+    <div class="container-fluid" style="background-color:#ffffff;overflow:hidden;">
+
+      
+      <div class="row">
+          <div class="col-xs-12 col-lg-10 col-lg-offset-1 padding_no">
+            <img src="images/teach_bg_1.jpg" class="teach_bg_1" width="100%">
+          </div>
+      </div>
+
+<div class="modal " id="login_frame" role="dialog" aria-labelledby="耳染教育" aria-hidden="true">   <!-- modal frame -->
+    <div class="modal-dialog">
+        <div class="modal-content">   <!--  modal-content -->
+        <div class="modal-body">     <!--  modal - body --> 
+        <div class="container-fluid">     <!--  modal container-fluid -->
+
+      <div class="row">   <!--  row one -->
+        <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3 align_center padding_no" style="">
+              <div>
+                <img src="images/logo_2.png" class="">
+                <p class="font_s11 color_coach4">互联网时代的中华传统家教演绎</p>
+              </div>
+              <form method="post" onsubmit="return check_null()">
+                
+                <input type="number" id="phone_num" class="form-control align_center below_5 word_nowrap holder_txt1 bor_1" value="" placeholder="手机号码" autofocus="autofocus" onblur="return check_phone_num()" data-toggle="tooltip" data-placement="top" title="手机号码格式不正确" data-trigger="manual">
+
+                <input type="password" id="pass_word" class="form-control align_center word_nowrap below_15 holder_txt1 bor_1" value="" onblur="return check_pass_word()" placeholder="登录密码" 
+                data-toggle="tooltip" data-placement="top" title="密码错误" data-trigger="manual">
+
+                <button class="btn btn-default below_15 circle_btn1" type="submit" ><span class="font_s16_bold color_coach3">立即登录</span></button>
+                <div>
+                    <div style="display:inline-block;float:left;"><p class="below_no font_s12 color_coach5" style="text-decoration:underline">忘记密码</p></div>
+                    <div class="top_no font_s12 color_coach5" style="display:inline-block;float:right;margin-bottom:0px;">
+                         <input type="checkbox" checked> <span>记住我</span></input>
+                    </div>  
+                </div>       
+              </form> 
+        </div>
+        </div>      <!-- row one is end -->
+
+</div>    <!--   modal continer fluid is end -->
+</div>    <!-- modal body is end -->
+</div>    <!-- modal content is end -->
+</div>  <!--  modal dialog is end -->
+</div>   <!-- modal frame is end -->
+
+    </div>   <!-- container is end -->
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-masonry/dist/masonry.pkgd.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+    // <script>
+    //   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //   e.src='//www.google-analytics.com/analytics.js';
+    //   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //   ga('create','UA-XXXXX-X');ga('send','pageview');
+    // </script>
+    -->
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+        <script type="text/javascript">
+            $(function(){
+
+            })
+        </script>
+</body>
+</html>
